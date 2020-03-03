@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>无缝轮播</title>
+		<link rel="stylesheet" href="./reset.min.css">
+		<style>
+			.banner{width: 1083px;height: 400px;margin: 30px auto;position: relative;overflow: hidden;}
+			.wrapper{position: absolute;top: 0;left: 0;height: 100%;}
+			.wrapper > div{float:left;width: 1083px;height:100%;}
+			.wrapper > div > img{display: block;width: 100%;height: 100%;}
+			.banner .focus{padding: 4px;height: 12px;background: rgba(131,132,132,0.8);border-radius: 10px;position: absolute;bottom: 15px;left: 50%;transform: translateX(-50%);font-size: 0;}
+			.banner .focus > li{display: inline-block;height: 12px;width: 12px;background: #F1F3F7;border-radius: 50%;margin: 0 4px;cursor: pointer;}
+			.banner .focus > li.active{background: #000;}
+			.banner .arrow{display:none;position: absolute;top: 50%;margin-top: -22.5px;width: 28px;height: 45px;background: url('./img/pre.png') no-repeat;opacity: .3;}
+			.banner .arrow:hover{opacity: .8}
+			.banner .arrow.prev{left: 0;background-position: 0 0;}
+			.banner .arrow.next{right: 0;background-position: -50px 0;}
+		</style>
+	</head>
+	<body>
+		<section class="banner" id="banner">
+			<div class="wrapper" id="wrapper">
+<!--				<div><img src="img/1.png" alt=""></div>-->
+<!--				<div><img src="img/2.png" alt=""></div>-->
+<!--				<div><img src="img/3.png" alt=""></div>-->
+<!--				<div><img src="img/4.png" alt=""></div>-->
+			</div>
+			<ul class="focus" id="focus">
+<!--				<li class="active"></li>-->
+<!--				<li></li>-->
+<!--				<li></li>-->
+<!--				<li></li>-->
+			</ul>
+			<a href="javascript:;" class="arrow prev" id="prev"></a>
+			<a href="javascript:;" class="arrow next" id="next"></a>
+		</section>
+		<script src="./js/utils.js"></script>
+		<script src="./js/animate.js"></script>
+<!--		<script src="./js/index.js"></script>-->
+		<script src="./js/index1.js"></script>
+	</body>
+</html>
